@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA</title>
+		<link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css"><!-- подключение CSS-->
+		<script defer src="./js/main.js"></script><!-- подклчение JS в самом конце body(для того чтоб сначала подгрузилась страница)-->
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="header__logo">
+				<img class="header__logo-img" src="./img/logo.svg" alt="Logo">
+			</a>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="#" class="header__item-link">
+						Авторы
+					</a>
+				</li>
+				<li class="header__item">
+					<a href="#" class="header__item-link">
+						Коллекции
+					</a>
+				</li>
+				<li class="header__item">
+					<a href="#" class="header__item-link">
+						Сервисы
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<buton class="btn header__button">
+			Кошелёк
+		</buton>
+	</header>
+
+	<main class="main">
+		<section class="hero">
+			<div class="container">
+				<h1 class="hero__title"></h1>
+				<div class="hero__wrap">
+					<button class="btn hero__button hero__button-bay">
+						Купить
+					</button>
+					<button class="btn hero__button hero__button-comauthor">
+						Стать автором
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="betauction">
+			<div class="container">
+				<div class="betauctiom__wrap-title">
+					<h2 class="section__title betauction__title">
+						Аукцион
+					</h2>
+					<a href="#" class="auction__link">Live auction</a>
+					<!-- <button class="btn auction__button auction__button-live"></button> -->
+				</div>
+				<div class="betauction__lot lot">
+					<div class="lot__clerk">
+						<img src="./img/betaution-avatar.jpg" alt="Serge_VM222 avatar" class="lot__clerk-avatar">
+									<span class="lot__clerk-name">
+										Serge_VM222
+									</span>
+					</div>
+					<div class="lot__name">
+						Witcherrr_3 (xml_t5)
+					</div>
+					<div class="lot__wrap-content">
+						<div class="lot__bid">
+							<span class="lot__bid-caption">
+								Ставка:
+							</span>
+							<span class="lot__bid-price">
+								0.10&nbsp;ETH
+							</span>
+							<span class="lot__bid-dollars">
+								$351.24
+							</span>
+						</div>
+						<div class="lot__timer">
+							<span class="lot__timer-caption">
+								Окончание через:
+							</span>
+							<div class="lot__timer-wrap timer">
+								<div class="timer__wrap timer__wrap-hour">
+									<span class="timer__nuber-hour">
+										01
+									</span>
+									<span class="timer__subtitle-hour">
+										Час
+									</span>
+								</div>
+
+								<div class="timer__wrap timer__wrap-minuts">
+									<span class="timer__nuber-minuts">
+										48
+									</span>
+									<span class="timer__subtitle--minuts">
+										Мин
+									</span>
+								</div>
+
+								<div class="timer__wrap timer__wrap-seconds">
+									<span class="timer__nuber-seconds">
+										47
+									</span>
+									<span class="timer__subtitle-seconds">
+										Сек
+									</span>
+								</div>
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<button class="btn betaucrion__button">
+						Cделать ставку
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="auction">
+			<div class="container">
+				<h2 class="section__title section__title-small auction__title">
+					Другие аукционы
+				</h2>
+					<ul class="auction__list">
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-1.jpg" alt="изображение стикера Alien (green) e_e">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-1.jpg" alt="Frank.Nagval avatar" class="clerk__avatar">
+									<span class="clerk__name">
+										Frank.Nagval
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									Alien (green) e_e
+								</h3>
+								<span class="auction__price">
+									0.02&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									03&nbsp;часа 25&nbsp;мин 23&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-2.jpg" alt="изображение стикера CoBRRRa">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-2.jpg" alt="CPH_777 avatar" class="clerk__avatar">
+									<span class="clerk__name">
+										CPH_777
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									CoBRRRa
+								</h3>
+								<span class="auction__price">
+									0.5&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									15&nbsp;мин 03&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-3.jpg" alt="изображение стикера Diamonds (4)">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-3.jpg" alt="sUpah_kiLLah avatar" class="clerk__avatar">
+									<span class="clerk__name">
+										sUpah_kiLLah
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									Diamonds (4)
+								</h3>
+								<span class="auction__price">
+									0.008&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									23&nbsp;часа 05&nbsp;мин 08&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-4.jpg" alt="изображение стикера Holofobia-2">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-4.jpg" alt="ttgs avatar" class="clerk__avatar">
+									<span class="clerk__name">
+										ttgs
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									Holofobia-2
+								</h3>
+								<span class="auction__price">
+									1.0&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									01&nbsp;час 15&nbsp;мин 55&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-5.jpg" alt="изображение стикера Baby Yoda&nbsp;1">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-5.jpg" alt="Peppppe22 avatar" class="clerk__avatar">
+									<span class="clerk__name">
+										Peppppe22
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									Baby Yoda&nbsp;1
+								</h3>
+								<span class="auction__price">
+									0.2&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									01&nbsp;час 28&nbsp;мин 11&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-6.jpg" alt="изображение стикера alien&nbsp;vs. predator (01)">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-6.jpg" alt="1300e1440 avatar" class="clerk__avatar">
+									<span class="clerk__name">
+										1300e1440
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									alien&nbsp;vs. predator (01)
+								</h3>
+								<span class="auction__price">
+									0.09&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									08&nbsp;часов 44&nbsp;мин 43&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-7.jpg" alt="изображение стикера IAMDECEPTICON">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-7.jpg" alt="avatar Robert_Wward" class="clerk__avatar">
+									<span class="clerk__name">
+										Robert_Wward
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									IAMDECEPTICON
+								</h3>
+								<span class="auction__price">
+									0.1&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									55&nbsp;мин 18&nbsp;сек
+								</time>
+							</div>
+						</li>
+						<li class="auction__item">
+							<div class="auction__item-cartoon">
+								<img src="./img/auction-8.jpg" alt="изображение стикера Ghostbusterrrrrrrs">
+							</div>
+							<div class="auction__item-content ">
+								<div class="auction__clerk clerk__wrap">
+									<img src="./img/avatar-8.jpg" alt="аватар ttgs" class="clerk__avatar">
+									<span class="clerk__name">
+										ttgs
+									</span>
+								</div>
+								<h3 class="auction__subtitle">
+									Ghostbusterrrrrrrs
+								</h3>
+								<span class="auction__price">
+									0.09&nbsp;ETH
+								</span>
+								<time class="auction__time" datetime="2023-10-08 09:39">
+									18&nbsp;мин 12&nbsp;сек
+								</time>
+							</div>
+						</li>
+					</ul>
+					<button class="btn auction__button">
+						Все аукционы
+					</button>
+
+			</div>
+		</section>
+		<section class="new">
+
+		</section>
+		<section class="subscribe">
+
+		</section>
+		<section class="author">
+
+		</section>
+		<section class="top">
+			<div class="container">
+				<h2 class="section__title top__title">
+					Топ продаж
+				</h2>
+				<div class="top__content">
+					<ul class="top__list">
+						<li class="top__item">
+							<div class="top__item-cartoon">
+								<img src="./img/top-1.jpg" alt="изображение стикера Holofobia1" class="top__item-img">
+							</div>
+							<div class="top__item-content">
+								<div class="top__clerk klerk__wrap">
+									<img src="./img/topavatar-1.jpg" alt="аватар продовца ttgs" class="top__clerk-img">
+									<span class="top__clerk-name">
+										ttgs
+									</span>
+								</div>
+								<h3 class="top__subtitle">
+									Holofobia1
+								</h3>
+								<span class="top__price">
+									4.70&nbsp;ETH ($16,873.47)
+								</span>
+							</div>
+						</li>
+						<li class="top__item">
+							<div class="top__item-cartoon">
+								<img src="./img/top-2.jpg" alt="изображение стикера Y.EEE" class="top__item-img">
+							</div>
+							<div class="top__item-content">
+								<div class="top__clerk klerk__wrap">
+									<img src="./img/topavatar-2.jpg" alt="аватар продовца Tat_2" class="top__clerk-img">
+									<span class="top__clerk-name">
+										Tat_2
+									</span>
+								</div>
+								<h3 class="top__subtitle">
+									Y.EEE
+								</h3>
+								<span class="top__price">
+									3.00&nbsp;ETH ($10,731.24)
+								</span>
+							</div>
+						</li>
+						<li class="top__item">
+							<div class="top__item-cartoon">
+								<img src="./img/top-3.jpg" alt="изображение стикера Baby Joda" class="top__item-img">
+							</div>
+							<div class="top__item-content">
+								<div class="top__clerk klerk__wrap">
+									<img src="./img/topavatar-3.jpg" alt="аватар продовца" class="top__clerk-img">
+									<span class="top__clerk-name">
+										Chris22
+									</span>
+								</div>
+								<h3 class="top__subtitle">
+									Baby Joda
+								</h3>
+								<span class="top__price">
+									2.00&nbsp;ETH ($7,121.04)
+								</span>
+							</div>
+						</li>
+						<li class="top__item">
+							<div class="top__item-cartoon">
+								<img src="./img/top-4.jpg" alt="изображение стикера Infinity_09" class="top__item-img">
+							</div>
+							<div class="top__item-content">
+								<div class="top__clerk klerk__wrap">
+									<img src="./img/topavatar-4.jpg" alt="аватар продовца Oswaald" class="top__clerk-img">
+									<span class="top__clerk-name">
+										Oswaald
+									</span>
+								</div>
+								<h3 class="top__subtitle">
+									Infinity_09
+								</h3>
+								<span class="top__price">
+									1.6109&nbsp;ETH ($5,762.32)
+								</span>
+							</div>
+						</li>
+						<li class="top__item">
+							<div class="top__item-cartoon">
+								<img src="./img/top-5.jpg" alt="изображение стикера Sadsadsad" class="top__item-img">
+							</div>
+							<div class="top__item-content">
+								<div class="top__clerk klerk__wrap">
+									<img src="./img/topavatar-5.jpg" alt="аватар продовца Paul-22" class="top__clerk-img">
+									<span class="top__clerk-name">
+										Paul-22
+									</span>
+								</div>
+								<h3 class="top__subtitle">
+									Sadsadsad
+								</h3>
+								<span class="top__price">
+									1.50&nbsp;ETH ($5,365.62)
+								</span>
+							</div>
+						</li>
+						<li class="top__item">
+							<div class="top__item-cartoon">
+								<img src="./img/top-6.jpg" alt="изображение стикера Attntn" class="top__item-img">
+							</div>
+							<div class="top__item-content">
+								<div class="top__clerk klerk__wrap">
+									<img src="./img/topavatar-6.jpg" alt="аватар продовца wardxxx" class="top__clerk-img">
+									<span class="top__clerk-name">
+										wardxxx
+									</span>
+								</div>
+								<h3 class="top__subtitle">
+									Attntn
+								</h3>
+								<span class="top__price">
+									1.0 ETH ($3,577.08)
+								</span>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="condition">
+			<div class="container">
+				<h2 class="section__title condition__title">
+					Пусто
+				</h2>
+				<p class="condidon_subtitle">
+					Для попадания в топ необходимо:
+				</p>
+				<ul class="subtitle__list">
+					<li class="subtitle__item subtitle__item-1">
+						Минимум пять опубликованных работ
+					</li>
+					<li class="subtitle__item subtitle__item-2">
+						Инвайт трём коллегам по цеху
+					</li>
+					<li class="subtitle__item subtitle__item-3">
+						Верифицированный аккаунт
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="fooer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="foter__right">
+					<a href="index.html" class="footer__logo">
+						<img src="./img/logo.svg" alt="Logo" class="footer__logo-img">
+					</a>
+				</div>
+				<div class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#" class="footer__item-link">
+								Соглашение
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__item-link">
+								Лицензия
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__item-link">
+								FAQ
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<small class="footer__copy">
+				AURA<sup class="reg">&reg;</sup>&nbsp;| 2021
+			</small>
+		</div>
+	</footer>
+</body>
+</html>
