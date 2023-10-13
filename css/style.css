@@ -1,80 +1,229 @@
-html{
-	box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
 *,
-  *::before,
-  *::after {
-            box-sizing: inherit;
-  }
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-  *:focus {
-    outline: none;
-  }
+*:focus {
+  outline: none;
+}
 
-  a{
+body {
+  min-width: 1200px;
+  font-family: 'muller', sans-serif;
+}
 
-  }
-
-  :root {
-      --black-background: #000;
-      --black-title: #333;
-    --black-border: #121723;
-    --black-text: #121723;
-    --gray-text: #A1A6B4;
-    --gray-play: #A1A6B4;
-    --gray-border: #E6E8EC;
-    --violet-default: #6D31EE;
-      --violet-background: #9D5CD0;
-      --violet-link: #9D5CD0;
-      --violet-focus: #7943A4;
-      --violet-active: #7943A4;
-      --violet-hover: #C283F3;
-      --white-background: #fff;
-    --white-text: #fff;
-  }
+:root {
+  --black-background: #000;
+  --black-title: #333;
+  --black-border: #121723;
+  --black-text: #121723;
+  --gray-text: #A1A6B4;
+  --gray-play: #A1A6B4;
+  --gray-border: #E6E8EC;
+  --violet-default: #6D31EE;
+  --violet-background: #9D5CD0;
+  --violet-link: #9D5CD0;
+  --violet-focus: #7943A4;
+  --violet-active: #7943A4;
+  --violet-hover: #C283F3;
+  --white-background: #fff;
+  --white-text: #fff;
+}
 
 
-	@font-face {
-    font-family: 'Muller';
-    src: local('Muller Bold'), local('MullerBold'),
-     url('../fonts/MullerBold.woff2') format('woff2'),
-		 url('../fonts/MullerBold.woff') format('woff');
-    font-weight: 800;
-		font-display: swap;
-    font-style: normal;
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller Bold'), local('MullerBold'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Muller';
-	src: local('Muller Regular'), local('MullerRegular'),
-			url('../fonts/MullerRegular.woff2') format('woff2'),
-			url('../fonts/MullerRegular.woff') format('woff');
-	font-weight: 400;
-	font-display: swap;
-	font-style: normal;
+  font-family: 'Muller';
+  src: local('Muller Regular'), local('MullerRegular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'RusoOne';
-	src: local('Ruso One Regular'), local('RusoOne Regular'), local('RusoOneRegular'),
-			url('../fonts/russo-one.woff2') format('woff2'),
-			url('../fonts/russo-one.woff') format('woff');
-	font-weight: 400;
-	font-display: swap;
-	font-style: normal;
+  font-family: 'RusoOne';
+  src: local('Ruso One Regular'), local('RusoOne Regular'), local('RusoOneRegular'),
+    url('../fonts/russo-one.woff2') format('woff2'),
+    url('../fonts/russo-one.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-a{
-	margin-right: nth;
+/* global */
+
+.list__reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
+.btn__reset {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.section__offset {
+  padding: 90px 0 0;
+}
+
+
+/* header */
+
+.header {
+  padding: 20px 0;
+}
+
+.header__container {
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 64px;
+}
+
+.header__nav {
+  margin-right: auto;
+}
+
+.header__item {
+  margin-right: 32px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__button {
+  padding: 17px 32px;
+  border-radius: 50px;
+  color: #fff;
+  background: #000;
+}
+
+/* hero */
+
+.hero {
+  padding: 160px 0;
+}
+
+.hero__content {
+  flex-direction: column;
+  max-width: 621px;
+
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.hero__button-bay {
+  margin-right: 32px;
+}
+
+/* auction */
+
+.auction__list {
+  flex-wrap: wrap;
+}
+
+.auction__item {
+  margin-right: 32px;
+  margin-bottom: 32px;
+  /* padding-top: 7px; */
+  width: 296px;
+  /* border-radius: 40px; */
+  outline: 1px solid red;
+}
+
+.auction__item-notmb {
+  margin-bottom: 0;
+}
+
+.auction__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.auction__item-cartoon {
+  /* margin-bottom: 7px; */
+  padding: 7px 0;
+  /* padding-top: 7px; */
+  padding-bottom: 7px;
+  border-radius: 40px 40px 0 0;
+  background-color: #EDEDF2;
+}
+
+.auction__item-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.auction__item-content {
+  flex-direction: column;
+  padding: 16px 16px 32px;
+  border-radius: 0 0 40px 40px;
+  background-color: #07060B;
+  color: white;
+}
+
+.clerk__wrap {
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.clerk__avatar {
+  margin-right: 8px;
+}
+
+.auction__subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.auction__price {
+  margin-bottom: 12px;
+}
