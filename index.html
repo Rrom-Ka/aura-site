@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css"><!-- подключение CSS-->
   <script defer src="./js/main.js"></script>
-  <!-- подклчение JS в самом конце body(для того чтоб сначала подгрузилась страница)-->
+  <!-- подклчение JS в самом конце body[или с defer в начале](для того чтоб сначала подгрузилась страница)-->
 </head>
 
 <body>
@@ -144,6 +144,7 @@
         </h2>
         <ul class="list__reset auction__list flex">
           <li class="auction__item">
+            <article class="auction__article">
             <div class="auction__item-cartoon">
               <img src="./img/auction-1.jpg" class="auction__item-img" alt="изображение стикера Alien (green) e_e">
             </div>
@@ -164,8 +165,10 @@
                 03&nbsp;часа 25&nbsp;мин 23&nbsp;сек
               </time>
             </div>
+            </article>
           </li>
           <li class="auction__item">
+            <article class="auction__article">
             <div class="auction__item-cartoon">
               <img src="./img/auction-2.png" class="auction__item-img" alt="изображение стикера CoBRRRa">
             </div>
@@ -186,8 +189,10 @@
                 15&nbsp;мин 03&nbsp;сек
               </time>
             </div>
+            </article>
           </li>
           <li class="auction__item">
+            <article class="auction__article">
             <div class="auction__item-cartoon">
               <img src="./img/auction-3.jpg" class="auction__item-img" alt="изображение стикера Diamonds (4)">
             </div>
@@ -208,8 +213,10 @@
                 23&nbsp;часа 05&nbsp;мин 08&nbsp;сек
               </time>
             </div>
+            </article>
           </li>
           <li class="auction__item">
+            <article class="auction__article">
             <div class="auction__item-cartoon">
               <img src="./img/auction-4.jpg" class="auction__item-img" alt="изображение стикера Holofobia-2">
             </div>
@@ -230,8 +237,9 @@
                 01&nbsp;час 15&nbsp;мин 55&nbsp;сек
               </time>
             </div>
+            </article>
           </li>
-          <li class="auction__item auction__item-notmb">
+          <li class="auction__item margin__bottom-reset">
             <div class="auction__item-cartoon">
               <img src="./img/auction-5.jpg" class="auction__item-img" alt="изображение стикера Baby Yoda&nbsp;1">
             </div>
@@ -253,7 +261,7 @@
               </time>
             </div>
           </li>
-          <li class="auction__item auction__item-notmb">
+          <li class="auction__item margin__bottom-reset">
             <div class="auction__item-cartoon">
               <img src="./img/auction-6.jpg" class="auction__item-img"
                 alt="изображение стикера alien&nbsp;vs. predator (01)">
@@ -276,7 +284,7 @@
               </time>
             </div>
           </li>
-          <li class="auction__item auction__item-notmb">
+          <li class="auction__item margin__bottom-reset">
             <div class="auction__item-cartoon">
               <img src="./img/auction-7.jpg" class="auction__item-img" alt="изображение стикера IAMDECEPTICON">
             </div>
@@ -298,9 +306,9 @@
               </time>
             </div>
           </li>
-          <li class="auction__item auction__item-notmb">
+          <li class="auction__item margin__bottom-reset">
             <div class="auction__item-cartoon">
-              <img src="./img/auction-8.jpg" class="auction__item-img" alt="изображение стикера Ghostbusterrrrrrrs">
+              <img src="./img/auction-8.png" class="auction__item-img" alt="изображение стикера Ghostbusterrrrrrrs">
             </div>
             <div class="auction__item-content flex">
               <div class="auction__clerk clerk__wrap flex">
@@ -337,19 +345,19 @@
 
     </section>
 
-    <section class="top">
+    <section class="top section__offset">
       <div class="container">
         <h2 class="section__title top__title">
           Топ продаж
         </h2>
         <div class="top__content">
-          <ul class="list__reset top__list">
-            <li class="top__item">
+          <ul class="list__reset top__list flex">
+            <li class="top__item flex">
               <div class="top__item-cartoon">
-                <img src="./img/top-1.jpg" alt="изображение стикера Holofobia1" class="top__item-img">
+                <img src="./img/top-1.png" alt="изображение стикера Holofobia1" class="top__item-img">
               </div>
               <div class="top__item-content">
-                <div class="top__clerk klerk__wrap">
+                <div class="top__clerk klerk__wrap flex">
                   <img src="./img/topavatar-1.jpg" alt="аватар продовца ttgs" class="top__clerk-img">
                   <span class="top__clerk-name">
                     ttgs
@@ -358,17 +366,22 @@
                 <h3 class="top__subtitle">
                   Holofobia1
                 </h3>
-                <span class="top__price">
-                  4.70&nbsp;ETH ($16,873.47)
-                </span>
+                <div class="top__price">
+                  <span class="top__price-eth">
+                    4.70&nbsp;ETH
+                  </span>
+                  <span class="top__price-usd">
+                    ($16,873.47)
+                  </span>
+                </div>
               </div>
             </li>
-            <li class="top__item">
+            <li class="top__item flex">
               <div class="top__item-cartoon">
-                <img src="./img/top-2.jpg" alt="изображение стикера Y.EEE" class="top__item-img">
+                <img src="./img/top-2.png" alt="изображение стикера Y.EEE" class="top__item-img">
               </div>
               <div class="top__item-content">
-                <div class="top__clerk klerk__wrap">
+                <div class="top__clerk klerk__wrap flex">
                   <img src="./img/topavatar-2.jpg" alt="аватар продовца Tat_2" class="top__clerk-img">
                   <span class="top__clerk-name">
                     Tat_2
@@ -377,17 +390,22 @@
                 <h3 class="top__subtitle">
                   Y.EEE
                 </h3>
-                <span class="top__price">
-                  3.00&nbsp;ETH ($10,731.24)
-                </span>
+                <div class="top__price">
+                  <span class="top__price-eth">
+                    3.00&nbsp;ETH
+                  </span>
+                  <span class="top__price-usd">
+                    ($10,731.24)
+                  </span>
+                </div>
               </div>
             </li>
-            <li class="top__item">
+            <li class="top__item flex">
               <div class="top__item-cartoon">
-                <img src="./img/top-3.jpg" alt="изображение стикера Baby Joda" class="top__item-img">
+                <img src="./img/top-3.png" alt="изображение стикера Baby Joda" class="top__item-img">
               </div>
               <div class="top__item-content">
-                <div class="top__clerk klerk__wrap">
+                <div class="top__clerk klerk__wrap flex">
                   <img src="./img/topavatar-3.jpg" alt="аватар продовца" class="top__clerk-img">
                   <span class="top__clerk-name">
                     Chris22
@@ -396,17 +414,22 @@
                 <h3 class="top__subtitle">
                   Baby Joda
                 </h3>
-                <span class="top__price">
-                  2.00&nbsp;ETH ($7,121.04)
-                </span>
+                <div class="top__price">
+                  <span class="top__price-eth">
+                    2.00&nbsp;ETH
+                  </span>
+                  <span class="top__price-usd">
+                    ($7,121.04)
+                  </span>
+                </div>
               </div>
             </li>
-            <li class="top__item">
+            <li class="top__item flex">
               <div class="top__item-cartoon">
-                <img src="./img/top-4.jpg" alt="изображение стикера Infinity_09" class="top__item-img">
+                <img src="./img/top-4.png" alt="изображение стикера Infinity_09" class="top__item-img">
               </div>
               <div class="top__item-content">
-                <div class="top__clerk klerk__wrap">
+                <div class="top__clerk klerk__wrap flex">
                   <img src="./img/topavatar-4.jpg" alt="аватар продовца Oswaald" class="top__clerk-img">
                   <span class="top__clerk-name">
                     Oswaald
@@ -415,17 +438,22 @@
                 <h3 class="top__subtitle">
                   Infinity_09
                 </h3>
-                <span class="top__price">
-                  1.6109&nbsp;ETH ($5,762.32)
-                </span>
+                <div class="top__price">
+                  <span class="top__price-eth">
+                    1.6109&nbsp;ETH
+                  </span>
+                  <span class="top__price-usd">
+                    ($5,762.32)
+                  </span>
+                </div>
               </div>
             </li>
-            <li class="top__item">
+            <li class="top__item flex margin__bottom-reset">
               <div class="top__item-cartoon">
-                <img src="./img/top-5.jpg" alt="изображение стикера Sadsadsad" class="top__item-img">
+                <img src="./img/top-5.png" alt="изображение стикера Sadsadsad" class="top__item-img">
               </div>
               <div class="top__item-content">
-                <div class="top__clerk klerk__wrap">
+                <div class="top__clerk klerk__wrap flex">
                   <img src="./img/topavatar-5.jpg" alt="аватар продовца Paul-22" class="top__clerk-img">
                   <span class="top__clerk-name">
                     Paul-22
@@ -434,17 +462,22 @@
                 <h3 class="top__subtitle">
                   Sadsadsad
                 </h3>
-                <span class="top__price">
-                  1.50&nbsp;ETH ($5,365.62)
-                </span>
+                <div class="top__price">
+                  <span class="top__price-eth">
+                    1.50&nbsp;ETH
+                  </span>
+                  <span class="top__price-usd">
+                    ($5,365.62)
+                  </span>
+                </div>
               </div>
             </li>
-            <li class="top__item">
+            <li class="top__item flex margin__bottom-reset">
               <div class="top__item-cartoon">
-                <img src="./img/top-6.jpg" alt="изображение стикера Attntn" class="top__item-img">
+                <img src="./img/top-6.png" alt="изображение стикера Attntn" class="top__item-img">
               </div>
               <div class="top__item-content">
-                <div class="top__clerk klerk__wrap">
+                <div class="top__clerk klerk__wrap flex">
                   <img src="./img/topavatar-6.jpg" alt="аватар продовца wardxxx" class="top__clerk-img">
                   <span class="top__clerk-name">
                     wardxxx
@@ -453,9 +486,14 @@
                 <h3 class="top__subtitle">
                   Attntn
                 </h3>
-                <span class="top__price">
-                  1.0 ETH ($3,577.08)
-                </span>
+                <div class="top__price">
+                  <span class="top__price-eth">
+                    1.0 ETH
+                  </span>
+                  <span class="top__price-usd">
+                    ($3,577.08)
+                  </span>
+                </div>
               </div>
             </li>
 
@@ -469,34 +507,36 @@
         <h2 class="section__title condition__title">
           Пусто
         </h2>
-        <p class="condidon_subtitle">
-          Для попадания в топ необходимо:
-        </p>
-        <ul class="list__reset subtitle__list">
-          <li class="subtitle__item subtitle__item-1">
-            Минимум пять опубликованных работ
-          </li>
-          <li class="subtitle__item subtitle__item-2">
-            Инвайт трём коллегам по цеху
-          </li>
-          <li class="subtitle__item subtitle__item-3">
-            Верифицированный аккаунт
-          </li>
-        </ul>
+        <div class="condition__content">
+          <p class="condidon_subtitle">
+            Для попадания в топ необходимо:
+          </p>
+          <ul class="list__reset condition__list">
+            <li class="condition__item condition__item-1">
+              Минимум пять опубликованных работ
+            </li>
+            <li class="condition__item condition__item-2">
+              Инвайт трём коллегам по цеху
+            </li>
+            <li class="condition__item condition__item-3">
+              Верифицированный аккаунт
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="fooer">
+  <footer class="footer">
     <div class="footer__top">
-      <div class="container">
+      <div class="container flex footer__container">
         <div class="foter__right">
           <a href="index.html" class="footer__logo">
             <img src="./img/logo.svg" alt="Logo" class="footer__logo-img">
           </a>
         </div>
         <div class="footer__nav">
-          <ul class="list__reset footer__list">
+          <ul class="list__reset footer__list flex">
             <li class="footer__item">
               <a href="#" class="footer__item-link">
                 Соглашение
