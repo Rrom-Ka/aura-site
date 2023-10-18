@@ -169,6 +169,100 @@ body {
   margin-right: 32px;
 }
 
+/* betauction */
+
+.betauctiom__wrap-title {
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.betauction__title {
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+.auction__link {
+  padding: 9px 15px;
+  padding-left: 26px;
+  border-radius: 40px;
+  outline: 2px solid #D13130;
+}
+
+.betauction__lot {
+  padding-left: 492px;
+}
+
+.lot__clerk {
+  align-items: center;
+  padding: 11px 16px;
+  margin-bottom: 32px;
+  max-width: 228px;
+  border-radius: 23px;
+  background-color: #EDEDF2;
+}
+
+.lot__clerk-avatar {
+  margin-right: 16px;
+}
+
+.lot__name {
+  margin-bottom: 32px;
+}
+
+.lot__wrap-content {
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.lot__bid {
+  flex-direction: column;
+  margin-right: 32px;
+  padding: 32px;
+  padding-right: 57px;
+  width: 296px;
+  border-radius: 40px;
+  background-color: #EDEDF2;
+}
+
+.lot__bid-caption {
+  margin-bottom: 16px;
+}
+
+.lot__bid-price {
+  margin-bottom: 16px;
+}
+
+.lot__timer {
+  flex-direction: column;
+  margin-right: 32px;
+  padding: 32px;
+  padding-right: 197px;
+  width: 460px;
+  border-radius: 40px;
+  background-color: #07060B;
+  color: white;
+}
+
+.lot__timer-caption {
+  margin-bottom: 16px;
+}
+
+.timer__wrap {
+  flex-direction: column;
+}
+
+.timer__nuber-hour,
+.timer__nuber-minuts,
+.timer__nuber-seconds {
+  margin-bottom: 16px;
+}
+
+
+.betaucrion__button {
+  background-color: #46F4DB;
+}
+
+
 /* auction */
 
 .auction__list {
@@ -359,6 +453,7 @@ body {
   text-align: center;
   color: #EDEDF2;
 }
+
 
 
 /* global prioritet */
