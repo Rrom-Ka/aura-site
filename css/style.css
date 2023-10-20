@@ -104,6 +104,16 @@ body {
 .section__title {
   margin: 0;
   margin-bottom: 32px;
+  color: var(--black, #07060b);
+  font-family: 'RusoOne', sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section__title-small {
+  font-size: 20px;
 }
 
 .section__offset {
@@ -111,9 +121,9 @@ body {
 }
 
 .btn {
-  padding: 25px 74px;
+  padding: 25px 54px;
   border-radius: 50px;
-  outline: 2px solid aquamarine;
+  /* outline: 2px solid aquamarine; */
 }
 
 /* header */
@@ -184,7 +194,6 @@ body {
 }
 
 .hero__button {
-  padding: 25px 54px;
   border-radius: 40px;
   font-size: 20px;
   font-weight: 700;
@@ -198,7 +207,7 @@ body {
 
 .hero__button-comauthor {
   padding: 20px 54px;
-  outline: 5px solid var(--button_cta, #46F4DB);
+  border: 5px solid var(--button_cta, #46F4DB);
   color: #fff;
 
 }
@@ -215,15 +224,25 @@ body {
   margin-bottom: 0;
 }
 
-.auction__link {
+.betauction__link {
   padding: 9px 15px;
   padding-left: 26px;
   border-radius: 40px;
-  outline: 2px solid #D13130;
+  border: 2px solid #D13130;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--red, #D13130);
+  background-image: url("../img/betauction-red_point.svg");
+  background-repeat: no-repeat;
+  background-position: 15px center;
 }
 
 .betauction__lot {
   padding-left: 492px;
+  background-image: url("../img/betauction-witcher.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
 }
 
 .lot__clerk {
@@ -239,8 +258,16 @@ body {
   margin-right: 16px;
 }
 
+.lot__clerk-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black, #07060b);
+}
+
 .lot__name {
   margin-bottom: 32px;
+  font-size: 48px;
+  color: var(--black, #07060b);
 }
 
 .lot__wrap-content {
@@ -260,10 +287,22 @@ body {
 
 .lot__bid-caption {
   margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black, #07060B);
 }
 
 .lot__bid-price {
   margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--black, #07060b);
+}
+
+.lot__bid-dollars {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--grey_middle, #95959D);
 }
 
 .lot__timer {
@@ -273,27 +312,56 @@ body {
   padding-right: 197px;
   width: 460px;
   border-radius: 40px;
+  background-image: url("../img/betauction-clock.svg");
+  background-repeat: no-repeat;
+  background-size: 121px 121px;
+  background-position: right 32px center;
   background-color: #07060B;
   color: white;
 }
 
 .lot__timer-caption {
   margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white, #fff);
 }
 
 .timer__wrap {
   flex-direction: column;
+  text-align: center;
+  margin-right: 26px;
+}
+
+.timer__wrap:last-child {
+  margin-right: 0;
+}
+
+.timer__nuber {
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white, #FFF);
+}
+
+.timer__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white, #FFF);
 }
 
 .timer__nuber-hour,
 .timer__nuber-minuts,
 .timer__nuber-seconds {
-  margin-bottom: 16px;
 }
 
 
 .betaucrion__button {
-  background-color: #46F4DB;
+  padding: 25px 74px;
+  background-color: #46f4db;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black, #07060B);
 }
 
 
@@ -310,7 +378,7 @@ body {
   /* padding-top: 7px; */
   width: 296px;
   /* border-radius: 40px; */
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .auction__item:nth-child(4n) {
@@ -320,6 +388,7 @@ body {
 .auction__item-cartoon {
   /* margin-bottom: 7px; */
   padding: 7px 0;
+  /* height: 174px; */
   /* padding-top: 7px; */
   padding-bottom: 7px;
   border-radius: 40px 40px 0 0;
@@ -327,8 +396,11 @@ body {
 }
 
 .auction__item-img {
+  width: 160px;
+  height: 160px;
   display: block;
   margin: 0 auto;
+  margin-top: auto;
   border-radius: 100%;
 }
 
@@ -349,13 +421,38 @@ body {
   margin-right: 8px;
 }
 
+.clerk__name{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white, #fff);
+}
+
 .auction__subtitle {
   margin: 0;
   margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white, #fff);
 }
 
 .auction__price {
   margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary, #46f4db);
+}
+
+.auction__time {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--grey_middle, #95959d);
+}
+
+.auction__button{
+  display: block;
+  margin: 0 auto;
+  padding: 20px 54px;
+  border: 5px solid #46f4db;
 }
 
 /* top */
