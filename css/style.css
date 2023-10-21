@@ -477,7 +477,7 @@ body {
   width: 624px;
   border-radius: 40px;
   background-color: white;
-  outline: 1px solid chartreuse;
+  /* outline: 1px solid chartreuse; */
 }
 
 .top__item:nth-child(2n) {
@@ -507,17 +507,31 @@ body {
   margin-bottom: 9px;
 }
 
+.top__clerk-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black, #07060b);
+}
+
 .top__subtitle {
   margin: 0;
   margin-bottom: 9px;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--black, #07060b);
 }
 
 .top__price-eth {
   margin-right: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black, #07060b);
 }
 
 .top__price-usd {
-  color: #95959D;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--grey_middle, #95959d);
 }
 
 /* condition */
@@ -527,6 +541,13 @@ body {
   background-color: #37373E;
 }
 
+.condition__container {
+  background-image: url("../img/condition-smail.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
 .condition__title {
   margin: 0;
   font-size: 0;
@@ -534,24 +555,51 @@ body {
 }
 
 .condition__content {
-  max-width: 396px;
+  max-width: 397px;
 }
 
-.condidon_subtitle {
+.condidon__subtitle {
   margin: 0;
   margin-bottom: 16px;
-  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white, #FFF);
 }
 
 .condition__item {
   margin: 0;
-  margin-bottom: 24px;
-  padding-left: 40px;
-  color: white;
+  margin-bottom: 16px;
+  line-height: 32px;
 }
 
 .condition__item:last-child {
   margin-bottom: 0;
+}
+
+.condition__item-descr {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 40px;
+  /* min-height: 32px; */
+  font-size: 18px;
+  color: var(--white, #fff);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px 32px;
+}
+
+
+.condition__item-1 {
+  background-image: url("../img/condition-1.svg");
+}
+
+.condition__item-2 {
+  background-image: url("../img/condition-2.svg");
+}
+
+.condition__item-3 {
+  background-image: url("../img/condition-3.svg");
 }
 
 /* footer */
@@ -563,7 +611,7 @@ body {
 
 .footer__top {
   padding: 20px 0;
-  background-color: #46F4DB;
+  background-color: #46f4db;
 }
 
 .footer__item {
@@ -574,15 +622,22 @@ body {
   margin-right: 0;
 }
 
+.footer__item-link {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black, #07060b);
+}
+
 .footer__bottom {
   padding: 8px 0;
-  background-color: #07060B;
+  background-color: #07060b;
 }
 
 .footer__copy {
   display: block;
   text-align: center;
-  color: #EDEDF2;
+  font-size: 12px;
+  color: #ededf2;
 }
 
 
