@@ -329,14 +329,67 @@
       </div>
     </section>
     <section class="new">
+      <div class="new__carucel section__offset">
+      <div class="container">
+        <div class="new__wrap-title">
+          <h2 class="section__title new__title">
+            Новые стикеры
+          </h2>
+        </div>
+        <div class="slider flex">
+          <div class="slider__img slider__img-1"></div>
+          <div class="slider__img slider__img-2"></div>
+          <div class="slider__img slider__img-3"></div>
+        </div>
+      </div>
+      </div>
+      <div class="new__subscribe">
+        <div class="container new__container">
+          <p class="new__subtitle">
+            Будь в&nbsp;курсе новинок! Подпишись на&nbsp;рассылку!
+          </p>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="new__form">
+            <div class="new__form-wrap flex">
+              <input type="text" class="new__form-input" name="name" placeholder="Имя" required>
+              <input type="email" class="new__form-input" name="email" placeholder="E-mail" required>
+              <button class="btn btn__reset new__button">
+                Подписаться
+              </button>
+              <label class="new__form-check check">
+                <input type="checkbox" class="check__input" required>
+                Согласен на&nbsp;обработку персональных данных
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-    </section>
-    <section class="subscribe section__offset">
-      <!-- subscribe -->
-    </section>
 
     <section class="author section__offset">
-      <!-- author -->
+     <div class="container author__container flex">
+      <div class="author__left">
+        <h2 class="section__title author__title">
+          Стать автором
+        </h2>
+        <p class="author__subtitle">
+          Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать к&nbsp;нам!
+        </p>
+        <p class="author__descr">
+          Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия сотрудничества!
+          <span class="author__descr-dtrong">Удачи!</span>
+        </p>
+      </div>
+      <div class="author__right">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="author__form flex">
+          <input type="file" name="photo" multiple accept="image/*,image/jpeg" class="author__form-cartoon" placeholder="Прикрепить работы (.jpeg&nbsp;/ .png)" required>
+          <input type="text" name="nickname" id="" class="author__form-nickname" placeholder="@telegram_nickname" required>
+          <button class="btn btn__reset author__button">
+            Отправить
+          </button>
+        </form>
+      </div>
+     </div>
     </section>
 
     <section class="top section__offset">
