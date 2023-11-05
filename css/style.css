@@ -533,7 +533,7 @@ body {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
-  color: var(--primary, --button_cta);
+  color: var(--primary);
 }
 
 .auction__time {
