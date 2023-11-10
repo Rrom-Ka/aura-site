@@ -22,9 +22,11 @@ img {
 }
 
 body {
-  min-width: 1200px;
+  min-width: 320px;
+  max-width: 1920px;
   font-family: 'muller', sans-serif;
   font-weight: 400;
+  /* line-height: 120%; */
 }
 
 :root {
@@ -117,7 +119,7 @@ body {
 }
 
 .btn {
-  padding: 25px 54px;
+  padding: 24px 54px 21px;
   border-radius: 50px;
   /* outline: 2px solid aquamarine; */
 }
@@ -125,7 +127,7 @@ body {
 /* header */
 
 .header {
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
 .header__container {
@@ -133,7 +135,7 @@ body {
 }
 
 .header__logo {
-  margin-right: 64px;
+  margin-right: 73px;
 }
 
 .header__nav {
@@ -141,7 +143,7 @@ body {
 }
 
 .header__item {
-  margin-right: 32px;
+  margin-right: 43px;
 }
 
 .header__item:last-child {
@@ -203,7 +205,7 @@ body {
   background-image: url(../img/hero-bg.png);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 50%;
+  background-size: 49%;
 }
 
 .hero__content {
@@ -214,10 +216,11 @@ body {
 
 .hero__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   font-family: 'RusoOne', sans-serif;
   font-size: 70px;
   font-weight: 400;
+  line-height: 120%;
   color: var(--white);
 }
 
@@ -228,7 +231,7 @@ body {
 }
 
 .hero__button-bay {
-  margin-right: 32px;
+  margin-right: 28px;
   color: var(--black);
   background-color: var(--button_cta, linear-gradient(180deg, var(--button_cta) 27.08%, var(--primary_active) 100%));
   transition:  background-color .3s ease-in-out;
@@ -247,7 +250,7 @@ body {
 }
 
 .hero__button-comauthor {
-  padding: 20px 54px;
+  padding: 19px 50px 18px;
   border: 5px solid var(--button_cta);
   color: var(--white);
   transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
