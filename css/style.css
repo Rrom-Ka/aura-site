@@ -41,6 +41,8 @@ body {
   --grey_middle: #95959D;
   --primary: #46F4DB;
   --primary_active: #57D272;
+  --gap: 32px;
+
 }
 
 
@@ -471,13 +473,17 @@ body {
 .auction__list {
   flex-wrap: wrap;
   margin-bottom: 32px;
+  gap: var(--gap);
+  --offsets: 3;
 }
 
 .auction__item {
-  margin-right: 32px;
-  margin-bottom: 32px;
+  /* margin-right: 32px;
+  margin-bottom: 32px; */
   /* padding-top: 7px; */
-  width: 296px;
+  /* width: 296px; */
+  width: calc( (100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  /* calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1)) */
   /* border-radius: 40px; */
   /* outline: 1px solid red; */
 }
@@ -1029,13 +1035,16 @@ opacity: 1;
 
 .top__list {
   flex-wrap: wrap;
+  gap: var(--gap);
+  --offsets: 1;
 }
 
 .top__item {
-  margin-right: 32px;
-  margin-bottom: 32px;
+  /* margin-right: 32px;
+  margin-bottom: 32px; */
   max-width: 624px;
-  width: 624px;
+  /* width: 624px; */
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
   border-radius: 40px;
   background-color: white;
   /* outline: 1px solid chartreuse; */
