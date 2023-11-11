@@ -26,7 +26,7 @@ body {
   max-width: 1920px;
   font-family: 'muller', sans-serif;
   font-weight: 400;
-  /* line-height: 120%; */
+  /* line-height: 125%; */
 }
 
 :root {
@@ -107,7 +107,7 @@ body {
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 125%;
 }
 
 .section__title-small {
@@ -327,7 +327,7 @@ body {
 }
 
 .lot__name {
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   font-size: 48px;
   color: var(--black);
 }
@@ -340,7 +340,7 @@ body {
 .lot__bid {
   flex-direction: column;
   margin-right: 32px;
-  padding: 32px;
+  padding: 31px;
   padding-right: 57px;
   width: 296px;
   border-radius: 40px;
@@ -348,14 +348,14 @@ body {
 }
 
 .lot__bid-caption {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   color: var(--black);
 }
 
 .lot__bid-price {
-  margin-bottom: 16px;
+  margin-bottom: 0;
   font-size: 48px;
   font-weight: 700;
   color: var(--black);
@@ -369,21 +369,21 @@ body {
 
 .lot__timer {
   flex-direction: column;
-  margin-right: 32px;
-  padding: 32px;
+  margin-right: 0;
+  padding: 31px;
   padding-right: 197px;
   width: 460px;
   border-radius: 40px;
   background-image: url("../img/betauction-clock.svg");
   background-repeat: no-repeat;
-  background-size: 121px 121px;
-  background-position: right 32px center;
+  background-size: 108px;
+  background-position: right 38px center;
   background-color: var(--black);
   color: white;
 }
 
 .lot__timer-caption {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
@@ -400,7 +400,7 @@ body {
 }
 
 .timer__nuber {
-  margin-bottom: 16px;
+  margin-bottom: 0;
   font-size: 48px;
   font-weight: 700;
   color: var(--white);
@@ -420,7 +420,7 @@ body {
 
 .betaucrion__button {
   position: relative;
-  padding: 25px 74px;
+  padding: 24px 74px;
   background-color: var(--button_cta);
   font-size: 20px;
   font-weight: 700;
@@ -464,6 +464,10 @@ body {
 
 /* auction */
 
+.auction {
+  padding-top: 0;
+}
+
 .auction__list {
   flex-wrap: wrap;
   margin-bottom: 32px;
@@ -487,7 +491,7 @@ body {
   padding: 7px 0;
   /* height: 174px; */
   /* padding-top: 7px; */
-  padding-bottom: 7px;
+  padding-bottom: 6px;
   border-radius: 40px 40px 0 0;
   background-color: var(--grey_light);
 }
@@ -526,14 +530,14 @@ body {
 
 .auction__subtitle {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
 }
 
 .auction__price {
-  margin-bottom: 12px;
+  margin-bottom: 7px;
   font-size: 20px;
   font-weight: 700;
   color: var(--primary);
@@ -548,7 +552,7 @@ body {
 .auction__button{
   display: block;
   margin: 0 auto;
-  padding: 20px 54px;
+  padding: 19px 77px;
   border: 5px solid var(--button_cta);
   font-size: 20px;
   font-weight: 700;
@@ -572,6 +576,7 @@ body {
 /* new */
 
 .new__carucel {
+  padding-bottom: 88px;
   background-color: var(--black);
 }
 
@@ -627,10 +632,10 @@ body {
 }
 
 .new__container {
-  padding: 32px 0;
+  padding: 32px 15px;
   background-image: url("../img/new-form-backgroun.png");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 16px center;
   background-size: contain;
 }
 
@@ -647,8 +652,8 @@ body {
   max-width: 460px;
 }
 .new__form-input {
-  margin-bottom: 16px;
-  padding: 25px 32px;
+  margin-bottom: 15px;
+  padding: 23px 32px;
   border-radius: 40px;
   font-size: 20px;
   color: var(--grey_light);
@@ -758,6 +763,8 @@ body {
 /* author */
 
 .author {
+  padding-top: 88px;
+  padding-bottom: 87px;
   background-color: var(--white);
 }
 
@@ -766,7 +773,7 @@ body {
 }
 
 .author__left {
-  width: 49%;
+  width: 48.9%;
   background-image: url("../img/author-background.png");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -779,7 +786,7 @@ body {
 }
 .author__subtitle {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   max-width: 556px;
   font-family: 'RusoOne', sans-serif;
   font-size: 20px;
@@ -799,8 +806,10 @@ body {
   line-height: 30px;
   color: var(--black);
 }
+
 .author__right {
-  width: 49%;
+  padding-top: 12px;
+  width: 48.9%;
   /* outline: 1px solid coral; */
 
 }
@@ -834,7 +843,7 @@ body {
   display: block;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 43%;
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
@@ -865,7 +874,7 @@ body {
   display: block;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 44%;
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
@@ -912,8 +921,15 @@ body {
   display: block;
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 68%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  /* font-family: Muller; */
+  font-size: 20px;
+  /* font-style: normal;
+  font-weight: 400; */
+  line-height: 30px; /* 150% */
+  color: var(--grey_middle);
   /* width: fit-content;
   height: fit-content; */
   z-index: 1000;
@@ -956,6 +972,7 @@ body {
 
 .author__button {
   position: relative;
+  padding: 24px 54px 23px;
   max-width: 296px;
   background-color: var(--button_cta);
   font-size: 20px;
@@ -1001,7 +1018,8 @@ opacity: 1;
 /* top */
 
 .top{
-  padding-bottom: 90px;
+  padding-top: 88px;
+  padding-bottom: 91px;
   background-color: var(--black);
 }
 
@@ -1028,7 +1046,7 @@ opacity: 1;
 }
 
 .top__item-cartoon {
-  padding: 16px 0 16px 16px;
+  padding: 16px 0 9px 16px;
   background-color: var(--grey_light);
   border-radius: 40px 0 0 40px;
 }
@@ -1038,7 +1056,8 @@ opacity: 1;
 }
 
 .top__item-content {
-  padding: 32px;
+  padding: 31px;
+  padding-bottom: 29px;
 }
 
 .top__clerk {
@@ -1058,7 +1077,7 @@ opacity: 1;
 
 .top__subtitle {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 2px;
   font-size: 48px;
   font-weight: 700;
   color: var(--black);
@@ -1087,8 +1106,8 @@ opacity: 1;
 .condition__container {
   background-image: url("../img/condition-smail.png");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
+  background-position: right 15px center;
+    background-size: 35%;
 }
 
 .condition__title {
@@ -1103,7 +1122,7 @@ opacity: 1;
 
 .condidon__subtitle {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-size: 24px;
   font-weight: 700;
   color: var(--white);
@@ -1153,7 +1172,7 @@ opacity: 1;
 }
 
 .footer__top {
-  padding: 20px 0;
+  padding: 20px 0 14px;
   background-color: var(--button_cta);
 }
 
