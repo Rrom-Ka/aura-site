@@ -96,7 +96,7 @@ body {
 }
 
 .container {
-  width: 1310px;
+  max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -117,7 +117,7 @@ body {
 }
 
 .section__offset {
-  padding: 90px 0;
+  padding: 89px 0;
 }
 
 .btn {
@@ -658,7 +658,7 @@ body {
   max-width: 460px;
 }
 .new__form-input {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding: 23px 32px;
   border-radius: 40px;
   font-size: 20px;
@@ -1055,18 +1055,27 @@ opacity: 1;
 }
 
 .top__item-cartoon {
+  position: relative;
+  width: 142px;
   padding: 16px 0 9px 16px;
   background-color: var(--grey_light);
   border-radius: 40px 0 0 40px;
 }
 
 .top__item-img {
-  /* border-radius: 100px; */
+  position: absolute;
+    top: 16px;
+    width: 141px;
+    /* z-index: 1;*/
+  border-radius: 100px;
 }
 
 .top__item-content {
   padding: 31px;
   padding-bottom: 29px;
+  border-radius: 0 40px 40px 0;
+  background-color: white;
+  z-index: 1000;
 }
 
 .top__clerk {

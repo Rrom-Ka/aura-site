@@ -1,0 +1,158 @@
+@media (max-width: 1200px) {
+  .container {
+    margin: 0;
+    padding: 0 35px;
+    max-width: 1024px;
+  }
+
+  .header__logo {
+    margin-right: 65px;
+}
+
+.header__item {
+  margin-right: 32px;
+}
+
+  .betauction__lot {
+    background-position: left top;
+    background-size: 460px;
+    /* padding-left: 403px; */
+  }
+
+  .lot__wrap-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lot__bid {
+    margin-right: 0;
+    margin-bottom: 34px;
+  }
+
+  .auction__list {
+    --offsets:2;
+    margin-bottom: 31px;
+  }
+
+
+  .auction__item:nth-last-child(-n+2) {
+    display: none;
+  }
+
+  .auction__item-cartoon {
+    /* padding-top: 11px; */
+  }
+
+  .slider__img {
+    width: 223px;
+    height: 223px;
+}
+
+.slider__img-3 {
+  width: 465px;
+}
+
+.new__container  {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.new__carucel {
+  padding-bottom: 11px;
+}
+
+.new__form-input {
+  margin-bottom: 13px;
+}
+
+.new__button  {
+  padding-top: 26px;
+}
+
+.new__container {
+  /* padding: 32px 15px; */
+  background-image: url(../img/new-form-backgroun-1024.png);
+  background-repeat: no-repeat;
+  background-position: right 36px center;
+  background-size: 460px;
+}
+
+.author__left {
+  width: 100%;
+  background-image: none;
+  /* background-repeat: n;
+  background-position: left bottom;
+  background-size: 0; */
+  /* background-image: url(../img/author-background-1024.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 296px; */
+  /* outline: 1px solid coral; */
+}
+
+.author__subtitle {
+  margin-bottom: 17px;
+  max-width: 788px;
+}
+
+.author__descr {
+  max-width: 788px;
+  margin-bottom: 19px;
+}
+
+.author__container {
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.author__right  {
+  width: 100%;
+  background-image: url(../img/author-background-1024.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 296px;
+}
+
+.author__form {
+  margin-left: auto;
+  flex-direction: column;
+  max-width: 65.5%;
+}
+
+.author__rigt-span {
+  left: 49%;
+    top: 68%;
+    transform: translate(-48%, -57%);
+}
+
+.author  {
+  padding-bottom: 91px;
+}
+
+.condition__container {
+
+  background-position: right 36px center;
+  background-size: 45%;
+}
+
+}
+
+@media (max-width: 992px) {
+  .top__item {
+    flex-direction: column;
+  }
+
+  .top__item-cartoon {
+    width: 100%;
+    padding: 16px 0 126px 16px;
+    border-radius: 40px 40px 0 0;
+}
+
+.top__item-content {
+  border-radius: 0 0 40px 40px;
+}
+
+.top__list {
+  /* --offsets: 2; */
+}
+}
