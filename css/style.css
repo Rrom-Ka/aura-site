@@ -199,6 +199,11 @@ body {
   background: var(--primary_active);
 }
 
+.header__button-svg {
+  display: none;
+  fill: #07060B;
+}
+
 /* hero */
 
 .hero {
@@ -928,6 +933,7 @@ body {
   position: absolute;
   left: 50%;
   top: 68%;
+  width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
   /* font-family: Muller; */
@@ -1150,6 +1156,9 @@ opacity: 1;
   margin: 0;
   margin-bottom: 16px;
   line-height: 32px;
+   background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px 32px;
 }
 
 .condition__item:last-child {
@@ -1164,9 +1173,7 @@ opacity: 1;
   /* min-height: 32px; */
   font-size: 18px;
   color: var(--white);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 32px 32px;
+
 }
 
 
